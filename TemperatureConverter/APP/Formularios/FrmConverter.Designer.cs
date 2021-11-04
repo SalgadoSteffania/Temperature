@@ -29,6 +29,7 @@ namespace APP.Formularios
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmConverter));
             this.txtingresa = new System.Windows.Forms.TextBox();
             this.lblCovertir = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -48,6 +49,7 @@ namespace APP.Formularios
             // 
             // txtingresa
             // 
+            this.txtingresa.BackColor = System.Drawing.Color.LightCyan;
             this.txtingresa.Location = new System.Drawing.Point(151, 54);
             this.txtingresa.Multiline = true;
             this.txtingresa.Name = "txtingresa";
@@ -67,6 +69,8 @@ namespace APP.Formularios
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("groupBox1.BackgroundImage")));
             this.groupBox1.Controls.Add(this.dataGridView1);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.label1);
@@ -75,12 +79,13 @@ namespace APP.Formularios
             this.groupBox1.Controls.Add(this.cmbEleccionIngresa);
             this.groupBox1.Controls.Add(this.lblCovertir);
             this.groupBox1.Controls.Add(this.txtingresa);
+            this.groupBox1.ForeColor = System.Drawing.Color.Black;
             this.groupBox1.Location = new System.Drawing.Point(29, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(639, 487);
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
+            this.groupBox1.Text = "Conversion de Temperaturas";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // dataGridView1
@@ -88,16 +93,20 @@ namespace APP.Formularios
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AllowUserToOrderColumns = true;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.Cyan;
+            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Grados,
             this.TipoTemperatura,
             this.ConversionG,
             this.ConversionTem});
-            this.dataGridView1.Location = new System.Drawing.Point(59, 285);
+            this.dataGridView1.GridColor = System.Drawing.Color.Magenta;
+            this.dataGridView1.Location = new System.Drawing.Point(71, 329);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(414, 168);
+            this.dataGridView1.Size = new System.Drawing.Size(494, 152);
             this.dataGridView1.TabIndex = 13;
             // 
             // Grados
@@ -105,30 +114,34 @@ namespace APP.Formularios
             this.Grados.HeaderText = "Grados";
             this.Grados.Name = "Grados";
             this.Grados.ReadOnly = true;
+            this.Grados.Width = 66;
             // 
             // TipoTemperatura
             // 
             this.TipoTemperatura.HeaderText = "Tipo Temperatura";
             this.TipoTemperatura.Name = "TipoTemperatura";
             this.TipoTemperatura.ReadOnly = true;
+            this.TipoTemperatura.Width = 116;
             // 
             // ConversionG
             // 
             this.ConversionG.HeaderText = "Conversion Grados";
             this.ConversionG.Name = "ConversionG";
             this.ConversionG.ReadOnly = true;
+            this.ConversionG.Width = 122;
             // 
             // ConversionTem
             // 
             this.ConversionTem.HeaderText = "Conversion Temperatura";
             this.ConversionTem.Name = "ConversionTem";
             this.ConversionTem.ReadOnly = true;
+            this.ConversionTem.Width = 148;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(46, 222);
+            this.button1.Location = new System.Drawing.Point(103, 213);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(86, 25);
+            this.button1.Size = new System.Drawing.Size(86, 30);
             this.button1.TabIndex = 12;
             this.button1.Text = "Aceptar";
             this.button1.UseVisualStyleBackColor = true;
@@ -142,9 +155,11 @@ namespace APP.Formularios
             this.label1.Size = new System.Drawing.Size(93, 13);
             this.label1.TabIndex = 11;
             this.label1.Text = "Ingresa los grados";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // txtSalida
             // 
+            this.txtSalida.BackColor = System.Drawing.Color.LightCyan;
             this.txtSalida.Location = new System.Drawing.Point(296, 134);
             this.txtSalida.Multiline = true;
             this.txtSalida.Name = "txtSalida";
@@ -154,6 +169,7 @@ namespace APP.Formularios
             // 
             // cmbEleccionIngresa2
             // 
+            this.cmbEleccionIngresa2.BackColor = System.Drawing.Color.LightCyan;
             this.cmbEleccionIngresa2.FormattingEnabled = true;
             this.cmbEleccionIngresa2.Items.AddRange(new object[] {
             "Celsius",
@@ -167,6 +183,7 @@ namespace APP.Formularios
             // 
             // cmbEleccionIngresa
             // 
+            this.cmbEleccionIngresa.BackColor = System.Drawing.Color.LightCyan;
             this.cmbEleccionIngresa.FormattingEnabled = true;
             this.cmbEleccionIngresa.Items.AddRange(new object[] {
             "Celsius",
